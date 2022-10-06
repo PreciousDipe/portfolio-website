@@ -1,0 +1,196 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav
+{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 6%;
+    height: 90%;
+    background-color: white;
+    transition: 0.5s;
+    opacity: 0.7;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+nav:hover{
+    width: 12%;
+}
+
+nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    background: none;
+    height: 100%;
+    transition: 0.5s;
+}
+
+nav ul li:hover{
+    background-color: black;
+}
+nav ul li a 
+{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #e72669;
+}
+
+nav ul li a .icon{
+    position: relative;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #e72669;
+
+}
+
+nav ul li a .icon .fa{
+    font-size: 24px;
+}
+
+nav ul li a .title{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 10px;
+
+}
+
+.list{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.logo{
+    height: 12vh;
+    width: 20vw;
+    position: absolute;
+    margin: 10px 10px;
+    border-radius: 20%;
+    right: 0px;
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+@keyframes spin{
+    from { tranform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+.logo img:hover{
+    animation: spin 2s infinite;
+
+}
+
+.intro{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 10%;
+
+}
+
+.intro h1{
+    font-size: 50px;
+    color: black;
+    margin-top: 80px;
+}
+
+span{
+    color: #e72669;
+}
+
+.intro p{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10%;
+    color: #e72669;
+}
+
+
+.underline {
+    width: 28%;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    position: relative;
+    margin: 50px;
+    margin-left: 45px;
+    size: 10px;
+}
+.underline span {
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+    background: #fff;
+    font-size:10px;
+    text-align: center;
+}
+
+.intro .para{
+    margin-top: -20px;
+    position: absolute;
+
+}
+.images{
+    width: 70%;
+    height: 160%;
+    position: absolute;
+    right: 5px;
+    top: -100px;
+    bottom: 0;
+
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, top, 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+
+}
+
+.images:hover .boy{
+    left: 45%;
+    
+}
+body{
+    background-color: #F9B07D;
+
+}
+  /* #ECB96A; /*
